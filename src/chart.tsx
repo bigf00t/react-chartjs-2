@@ -82,7 +82,7 @@ function ChartComponent<
       destroyChart();
       setTimeout(renderChart);
     } else {
-      chartRef.current.update();
+      chartRef.current.update('resize');
     }
   }, [redraw, options, data.labels, data.datasets]);
 
