@@ -32,7 +32,7 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "pnpm test && pnpm build && del ./package && clean-publish",
+    "prepare": "pnpm build && del ./package && clean-publish",
     "postpublish": "del ./package",
     "emitDeclarations": "tsc --emitDeclarationOnly",
     "build": "rollup -c & pnpm emitDeclarations",
